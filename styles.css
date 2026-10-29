@@ -1,0 +1,518 @@
+/* Estilos para el sitio web del taller automotriz Fix & Go */
+/* Estilo General */
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color:#222222;
+}
+/* Encabezado */
+header {
+    background-color: #15191e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*Nombre del taller*/
+header h2 {
+    color: #ff2525;
+}
+/* Navegación */
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+/* Contenedor del logo y el nombre del taller */
+.logo-container {
+    display: flex;         
+    align-items: center;    
+    gap: 15px;             
+}
+
+.logo-container img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+.logo-container h2 {
+    color: #ff2525;
+    margin: 0;
+}
+/* Efectos al pasar el mouse por encima */
+nav a:hover {
+      color: #ff2525;
+}
+/* Sección Principal */
+main {
+    background-color: #15191e;
+    color: white;
+}
+
+/* Banner de inicio */
+.banner {
+    width: 100%;
+    padding: 0 0 0 40px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0;
+    background-color: #15191e;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Texto del banner */
+.texto-banner {
+    flex: 1;
+    min-width: 0;
+    padding: 40px 30px 40px 0;
+    align-self: center;
+}
+
+.texto-banner p:first-child {
+    color: #ff2525;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.texto-banner h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-banner p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Imagen del banner */
+.imagen-banner {
+    flex: 1.4;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%);
+    mask-image: linear-gradient(to right, transparent 0%, black 40%);
+}
+/* Botón de reserva */
+.boton-reserva {
+    display: inline-block;
+    background-color: #ff2525;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.boton-reserva:hover {
+    background-color: #cc1d1d;
+}
+
+/*Sección de servicios*/
+.servicios {
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+.servicios h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+.servicio img {
+    display: block;
+    width: auto;
+    height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+.servicio {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid #ff2525;
+}
+.servicio h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Sección Quiénes somos */
+.nosotros {
+    background-color: #f0f1f3;
+    color: #15191e;
+}
+
+/* Espacio reservado para la imagen */
+.imagen-nosotros img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Título */
+.texto-nosotros h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Descripción */
+.texto-nosotros p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Enlace Conoce más */
+.enlace-conoce {
+    display: inline-block;
+    background-color: #ff2525;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.enlace-conoce:hover {
+    background-color: #cc1d1d;
+}
+
+/* Sección Consejos */
+.consejos {
+    background-color: #ffffff;
+    color: #15191e;
+}
+
+.titulo-consejos {
+    text-align: center;
+}
+
+.titulo-consejos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.titulo-consejos p {
+    color: #555555;
+    margin-bottom: 0;
+}
+
+/* Cada consejo */
+.consejo {
+    padding: 15px;
+    text-align: center;
+}
+
+.consejo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.consejo p {
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Iconos de los consejos */
+.icono-consejo {
+    display: block;
+    font-size: 32px;
+    color: #15191e;
+    margin-bottom: 12px;
+}
+
+/* Sección de precios */
+.precios {
+    background-color: #f0f1f3;
+    color: #15191e;
+}
+
+.titulo-precios {
+    text-align: center;
+}
+
+.titulo-precios h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titulo-precios p {
+    color: #555555;
+}
+
+/* Tabla */
+.tabla-precios {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-precios thead th {
+    background-color: #15191e;
+    color: white;
+    padding: 16px;
+}
+
+.tabla-precios tbody td {
+    padding: 14px 16px;
+    vertical-align: middle;
+}
+
+.tabla-precios tbody tr:hover td {
+    background-color: #fff0f0;
+}
+
+.nota-precios {
+    color: #666666;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
+/* Sección Ubicación */
+.ubicacion {
+    background-color: #f0f1f3;
+    color: #15191e;
+}
+
+/* Información del taller */
+.datos-ubicacion h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.datos-ubicacion p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.datos-ubicacion i {
+    color: #ff2525;
+    margin-right: 10px;
+}
+
+/* Mapa */
+.mapa-ubicacion {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.mapa-ubicacion iframe {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border: 0;
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #15191e;
+    color: white;
+    padding: 18px 0;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo y nombre */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-logo h2 {
+    color: #ff2525;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer-logo p {
+    font-size: 11px;
+    margin: 0;
+}
+
+/* Copyright */
+.footer-copy {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Redes sociales */
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-redes a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #ff2525;
+}
+
+
+/* Espaciado uniforme de las secciones */
+/* Las secciones con .container ya tienen su espacio vertical (py-4) */
+.nosotros,
+.consejos,
+.precios,
+.reserva,
+.ubicacion {
+    padding: 0;
+}
+
+/* Servicios no usa .container, por eso lleva su propio espacio */
+.servicios {
+    padding: 24px 40px;
+}
+
+/* Servicios: blanco */
+.servicios {
+    background-color: #ffffff;
+}
+
+/* Quiénes somos: gris hueso */
+.nosotros {
+    background-color: #f0f1f3;
+}
+
+/* Consejos: blanco */
+.consejos {
+    background-color: #ffffff;
+}
+
+/* Tabla de precios: gris hueso */
+.precios {
+    background-color: #f0f1f3;
+}
+
+/* Reserva de cita: blanco */
+.reserva {
+    background-color: #ffffff;
+}
+
+/* Ubicación: gris hueso */
+.ubicacion {
+    background-color: #f0f1f3;
+}
+
+/* Sección Reserva tu cita */
+.reserva {
+    color: #15191e;
+}
+
+/* Título y descripción */
+.reserva h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.descripcion-reserva {
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+.reserva .form-control,
+.reserva .form-select {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 1px solid #d9dce0;
+    border-radius: 6px;
+}
+
+.reserva .form-control:focus,
+.reserva .form-select:focus {
+    border-color: #ff2525;
+    box-shadow: 0 0 0 3px rgba(255, 37, 37, 0.12);
+}
+
+/* Botón de envío */
+.btn-reserva {
+    width: 100%;
+    background-color: #ff2525;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-reserva:hover {
+    background-color: #cc1d1d;
+}
+
+/* Espacio para la imagen */
+.imagen-reserva {
+    width: 100%;
+    min-height: 200px;
+}
+
+.imagen-reserva img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
